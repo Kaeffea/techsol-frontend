@@ -1,11 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* 1. Import do Tema (sempre no topo) */
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
+/* 2. Reset Universal do Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 3. Estrutura Base do Documento */
 html,
 body {
   height: 100%;
-}
-body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* 4. O componente raiz do Angular será nosso container flex */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Usando vh (altura da viewport) como uma garantia extra */
+}
+
+/* 5. O conteúdo principal DEVE crescer */
+main {
+  flex-grow: 1; /* Dizendo explicitamente: APENAS CRESÇA para ocupar o espaço */
 }

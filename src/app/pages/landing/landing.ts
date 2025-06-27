@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { Header } from '../../components/header/header';
-import { Footer } from '../../components/footer/footer';
+import { Carousel } from '../../components/carousel/carousel';
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [Header, Footer],
+  imports: [Carousel],
   templateUrl: './landing.html',
   styleUrl: './landing.scss',
 })
