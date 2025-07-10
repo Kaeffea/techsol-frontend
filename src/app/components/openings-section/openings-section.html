@@ -1,0 +1,12 @@
+<div class="openings-container">
+  <h2>Vagas em Aberto</h2>
+  <div class="cards-wrapper">
+    @for (job of jobOpenings; track job.title) {
+      <app-job-card 
+        [title]="job.title"
+        [location]="job.location"
+        [description]="job.description">
+      </app-job-card>
+    }
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.contact-form-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+mat-form-field {
+  width: 100%;
+}

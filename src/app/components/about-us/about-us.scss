@@ -1,0 +1,36 @@
+.about-us-container {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px; // Espaço entre as colunas
+  flex-wrap: wrap; // Permite que as colunas quebrem em telas menores
+}
+
+.text-content, .image-content {
+  flex: 1; // Faz com que cada coluna tente ocupar o mesmo espaço
+  min-width: 300px; // Largura mínima antes de quebrar a linha
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.text-content p {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
